@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with FLTK",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++17",
+                "your_source_file.cpp",
+                "-o",
+                "output_executable_name",
+                "-I/opt/homebrew/Cellar/fltk/1.3.9/include",
+                "-L/opt/homebrew/Cellar/fltk/1.3.9/lib",
+                "-lfltk",
+                "-lfltk_forms",
+                "-lfltk_gl",
+                "-lfltk_images"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
