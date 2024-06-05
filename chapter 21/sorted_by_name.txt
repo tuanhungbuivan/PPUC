@@ -1,0 +1,14 @@
+Order for Alice Johnson
+Address: 789 Maple Road
+Date: 17 / 5 / 2024
+Purchases:
+  Printer - 200 - 1
+
+Order for Jane Smith
+Address: 456 Oak Avenue
+Date: 16 / 5 / 2024
+Purchases:
+  Keyboard - 75 - 1
+  Monitor - 250 - 2
+  Cable - 15 - 3
+

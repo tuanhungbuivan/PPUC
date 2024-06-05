@@ -1,0 +1,15 @@
+Order for Grace Black
+Address: 111 Walnut Avenue
+Date: 21 / 5 / 2024
+Purchases:
+  Desk - 150 - 1
+  Chair - 100 - 1
+
+Order for Hank Green
+Address: 222 Fir Court
+Date: 22 / 5 / 2024
+Purchases:
+  Router - 65 - 1
+  Modem - 50 - 1
+  Switch - 30 - 1
+

@@ -1,0 +1,16 @@
+Jane Smith
+456 Oak Avenue
+16/5/2024
+3
+Keyboard 75.00 1
+Monitor 250.00 2
+Cable 15.00 3
+
+Alice Johnson
+789 Maple Road
+17/5/2024
+1
+Printer 200.00 1
+
+
+

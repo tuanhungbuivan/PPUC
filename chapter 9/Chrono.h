@@ -1,29 +1,35 @@
 #ifndef CHRONO_H
 #define CHRONO_H
 
-namespace Chrono{
+#include <iostream>
 
+namespace Chrono {
 
+    enum class Month {
+        jan = 0, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec
+    };
 
-enum class Month{
-    jan  = 1, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec
-};
+    class Date {
+    public:
+        class Invalid {};
 
-class Date{
-public:
-    class Invalid{};
-    Date(int yy, Month m, int dd);
-    void add_day(int d);
-    int day()   const {return d;}
-    Month month() const {return m;}
-    int year()  const {return y;}
-private:
-    int y, d;
-    Month m;
-    bool is_valid();
-};
+        Date(int yy, Month m, int dd);
 
-std::ostream& operator<<(std::ostream& os, const Date& d);
+        void add_day(int d);
+
+        int day() const { return d; }
+        Month month() const { return m; }
+        int year() const { return y; }
+
+    private:
+        int y;
+        Month m;
+        int d;
+
+        bool is_valid();
+    };
+
+    std::ostream& operator<<(std::ostream& os, const Date& d);
 
 }
 

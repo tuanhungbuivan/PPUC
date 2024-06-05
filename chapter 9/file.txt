@@ -1,0 +1,92 @@
+library.cpp
+/*
+    Patron::Patron(const std::string& name, const int& card_number, const double& fees)
+        : name(name), card_number(card_number), fees(fees) { }
+    
+    //Patron::Patron()
+    //    : name(""), card_number(0), fees(0) {}
+
+    std::string Patron::get_name() const { return name; }
+    int Patron::get_cardnum() const { return card_number; }
+    double Patron::get_fees() const { return fees; }
+
+    
+
+    std::ostream& operator<<(std::ostream& os, const Patron& patron)
+    {
+        os << "\nName: " << patron.name;
+        os << "\nCard Number: " << patron.card_number;
+        os << "\nFees: " << patron.fees;
+
+        return os;
+    }
+    
+    void Patron::set_fees(double f)
+    {
+        fees = f;
+    }
+    
+    bool owes_fees(const Patron& p)
+    {
+        return p.get_fees() > 0;
+    }
+
+    bool operator==(const Patron& p1, const Patron& p2)
+    {
+        return p1.get_cardnum() == p2.get_cardnum();
+    }
+
+    bool operator!=(const Patron& p1, const Patron& p2)
+    {
+        return !(p1 == p2);
+    }
+*/
+
+library.h
+
+/*
+    class Patron{
+    public:
+        Patron(const std::string& name, const int& card_number, const double& fees);
+        //Patron();
+
+        std::string get_name() const;
+        int get_cardnum() const;
+        double get_fees() const;
+
+        //void set_fees(double f);
+
+        friend std::ostream& operator<<(std::ostream& os, const Patron& patron);
+
+        
+
+    private:
+        std::string name;
+        int card_number;
+        double fees;
+    };
+
+    bool owes_fees(const Patron& p);
+    bool operator==(const Patron& p1, const Patron& p2);
+    bool operator!=(const Patron& p1, const Patron& p2);
+*/
+
+ex8()
+
+/*
+void ex8()
+{   
+    Patron mypatron1("Marcin", 100, 50.0);
+    Patron mypatron2("Michal", 200, 20.0);
+
+    std::cout << "\nPatron1: " << mypatron1 << std::endl;
+    std::cout << "\nPatron2: " << mypatron2 << std::endl;
+
+    //mypatron1.set_fees(20);
+    //mypatron2.set_fees(10);
+
+    std::cout << "\nPatron1 after paying: " << mypatron1 << std::endl;
+    std::cout << "\nPatron2 after paying: " << mypatron2 << std::endl;
+
+}
+*/

@@ -8,14 +8,14 @@
             "type": "shell",
             "command": "g++",
             "args": [
+                "-g",
+                "chapter9_ex7.cpp",
+                "lib.cpp",
                 "-o",
-                "program",
-                "chapter9.5.cpp",
-                "Chrono.cpp",
-                "-I.",
+                "chapter9_ex7"
             ],
             "group": {
-                "kind": "build",
+                "kind": "build", 
                 "isDefault": true
             }
         }
